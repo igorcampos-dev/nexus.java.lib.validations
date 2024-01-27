@@ -1,6 +1,6 @@
 # Project Nexus - Biblioteca de Validação de propriedades e metodos
 
-uma biblioteca de segurança desenvolvida como parte do projeto Nexus. O objetivo principal desta biblioteca é fornecer funcionalidades permitindo validar campos e properidades de metodos para facilitar outros projetos e separar as responsabilidades
+uma biblioteca de validação desenvolvida como parte do projeto Nexus. O objetivo principal desta biblioteca é fornecer funcionalidades permitindo validar campos e properidades de metodos para facilitar outros projetos e separar as responsabilidades
 
 ## Funcionalidades Principais
 
