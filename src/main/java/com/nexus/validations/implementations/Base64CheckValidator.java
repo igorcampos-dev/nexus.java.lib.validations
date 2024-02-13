@@ -14,6 +14,9 @@ public class Base64CheckValidator implements ConstraintValidator<Base64Check, St
 
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
+        if (value == null) {
+            return false;
+        }
         byte[] decodedBytes = decodeInBytes(value);
         return validateImage(decodedBytes);
     }

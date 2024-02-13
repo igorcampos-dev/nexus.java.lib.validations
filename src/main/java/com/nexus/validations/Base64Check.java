@@ -12,7 +12,7 @@ import com.nexus.validations.implementations.Base64CheckValidator;
  * Para usar esta anotação, aplique-a ao campo de string ou método que contém a representação
  * codificada em Base64 de uma imagem. A validação será realizada utilizando a implementação em
  * {@link Base64CheckValidator}.
- *
+ * <p>
  * Exemplo:
  * {@code @Base64Check(message = "A representação em Base64 não é uma imagem válida")}
  * private String imagemBase64;
@@ -29,7 +29,6 @@ import com.nexus.validations.implementations.Base64CheckValidator;
  */
 
 @Documented
-@Constraint(validatedBy = Base64CheckValidator.class)
 @Target({ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Base64Check {

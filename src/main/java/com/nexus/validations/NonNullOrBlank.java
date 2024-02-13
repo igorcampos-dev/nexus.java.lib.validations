@@ -1,3 +1,18 @@
+/**
+ * A notação {@code NonNullOrBlank} é utilizada para validar se uma string não é nula e nem vazia.
+ * Ela é aplicada a campos de texto em classes Java para garantir que esses campos tenham valores significativos.
+ * <p>
+ * Uso:
+ * A notação {@code NonNullOrBlank} pode ser aplicada a campos de texto em classes Java para impor a restrição
+ * de que esses campos não podem ser nulos ou vazios.
+ * <p>
+ * Atributos:
+ * - {@code message}: Mensagem de erro a ser exibida se a validação falhar. O valor padrão é "A string não pode ser nula ou vazia".
+ * - {@code groups}: Grupos de validação
+ * - {@code payload}: Carga útil associada à validação
+ * <p>
+ * Author: Igor de Campos Kopschinski
+ */
 package com.nexus.validations;
 
 import java.lang.annotation.ElementType;
@@ -8,7 +23,6 @@ import jakarta.validation.Constraint;
 import com.nexus.validations.implementations.NonNullOrBlankValidator;
 import jakarta.validation.Payload;
 
-@Constraint(validatedBy = NonNullOrBlankValidator.class)
 @Target({ElementType.FIELD, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface NonNullOrBlank {
