@@ -1,21 +1,20 @@
 package com.nexus.validations;
 
-import jakarta.validation.Constraint;
 import java.lang.annotation.*;
 import com.nexus.validations.implementations.Base64CheckValidator;
 
 /**
- * Notação para validar se uma string codificada em Base64 representa uma imagem válida.
+ * Notação para validar se uma ‘string’ codificada em Base64 representa uma imagem válida.
  * Pode ser aplicada a campos de classe ou métodos.
- *
+ * <p>
  * Utilização:
- * Para usar esta anotação, aplique-a ao campo de string ou método que contém a representação
+ * Para usar esta anotação, aplique-a ao campo de ‘string’ ou método que contém a representação
  * codificada em Base64 de uma imagem. A validação será realizada utilizando a implementação em
  * {@link Base64CheckValidator}.
  * <p>
  * Exemplo:
  * {@code @Base64Check(message = "A representação em Base64 não é uma imagem válida")}
- * private String imagemBase64;
+ * private ‘String’ imagemBase64;
  *
  * @author Igor de Campos Kopschinski
  *
