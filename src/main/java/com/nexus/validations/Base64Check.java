@@ -1,8 +1,3 @@
-package com.nexus.validations;
-
-import java.lang.annotation.*;
-import com.nexus.validations.implementations.Base64CheckValidator;
-
 /**
  * Notação para validar se uma ‘string’ codificada em Base64 representa uma imagem válida.
  * Pode ser aplicada a campos de classe ou métodos.
@@ -24,8 +19,12 @@ import com.nexus.validations.implementations.Base64CheckValidator;
  * A mensagem padrão exibida quando a validação falha é "Imagem inválida".
  * Esta mensagem pode ser personalizada ao aplicar a anotação.
  *
- * @see Base64CheckValidator
+ * @see com.nexus.validations.implementations.Base64CheckValidator
  */
+
+package com.nexus.validations;
+
+import java.lang.annotation.*;
 
 @Documented
 @Target({ElementType.METHOD, ElementType.FIELD})

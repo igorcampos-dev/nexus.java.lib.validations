@@ -1,13 +1,7 @@
-package com.nexus.validations;
-
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import jakarta.validation.Payload;
-import com.nexus.validations.implementations.NonNullOrBlankValidator;
-
 /**
+ * @author Igor de Campos Kopschinski
+ * @version 1.0
+ * <p>
  * A notação {@code NonNullOrBlank} é utilizada para validar se uma ‘string’ não é nula e nem vazia.
  * Ela é aplicada a campos de texto em classes de Java para garantir que esses campos tenham valores significativos.
  * <p>
@@ -22,8 +16,17 @@ import com.nexus.validations.implementations.NonNullOrBlankValidator;
  * <p>
  * Author: Igor de Campos Kopschinski
  *
- * @see NonNullOrBlankValidator
+ * @see com.nexus.validations.implementations.NonNullOrBlankValidator
  */
+
+package com.nexus.validations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import jakarta.validation.Payload;
+
 
 @Target({ElementType.FIELD, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)

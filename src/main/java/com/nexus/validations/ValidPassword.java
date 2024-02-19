@@ -1,3 +1,16 @@
+/**
+ * @author Igor de Campos Kopschinski
+ * @version 1.0
+ * <p>
+ * Anotação para validar senhas.
+ * <p>
+ * Esta anotação é utilizada para validar senhas, garantindo que atendam a requisitos mínimos de comprimento.
+ * Ela pode ser aplicada a campos de senha em classes de modelo ou DTO.
+ * </p>
+ *
+ * @see com.nexus.validations.implementations.ValidPasswordValidator
+ */
+
 package com.nexus.validations;
 
 import jakarta.validation.Payload;
